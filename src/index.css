@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: rgb(17, 16, 16);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.jokes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgb(255, 0, 89);
+}
+.left-container {
+  position: fixed;
+  margin-top: 150px;
+  left: 60px;
+  max-width: 500px;
+}
+.changing {
+  position: relative;
+  text-align: center;
+  width: 500px;
+  background: rgb(179, 179, 179,0.2);
+  box-shadow: 0px 0px 20px white;
+  border-radius: 10px;
+  height: 250px;
+  color: white;
+  overflow: hidden;
+  margin: 2% 5%;
+  max-width: 500px;
+}
+.top {
+  position: absolute;
+  padding: 150px;
+  background: rgb(255, 0, 89);
+  border-radius: 50%;
+}
+.top {
+  top: -100px;
+  left: 70%;
+}
+p {
+  position: relative;
+  margin: 5%;
+}
+b {
+  position: relative;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+button {
+  margin: 5%;
+  padding: 10px 20px;
+  background: rgb(255, 0, 89);
+  border: 2px solid rgb(255, 0, 89);
+  border-radius: 10px;
+  color: white;
+  transition: 0.8s ease background;
+}
+button:hover {
+  background: transparent;
+  color: rgb(255, 0, 89);
+  box-shadow: 0 5px 10px rgb(255, 0, 89);
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+textarea {
+  margin-left: 7px;
+  width: 210px;
+  height: 150px;
+}
+input {
+  margin: 3%;
+  padding: 10px 30px;
+  outline: none;
+  border: none;
+}
+input:focus, input:active {
+  box-shadow: 0px 0px 10px rgb(0, 68, 255);
+}
+
+@media screen and (max-width: 600px) {
+  .left-container {
+    margin-right: 0;
+  }
+}
+@media (max-width: 768px) {
+  .jokes {
+    display: block;
+  }
+  .left-container {
+    position: absolute;
+    top: 0;
+  }
+  .changing {
+    margin-top: 500px;
+    max-width: 400px;
+  }
+}
